@@ -1,0 +1,22 @@
+{
+	"query": {
+		"bool": {
+			"must": [
+				{
+					"range": {
+						"score": {
+							"gte": 1
+						}
+					}
+				},
+				{
+					"range": {
+						"score": {
+							"lte": 2
+						}
+					}
+				}
+			]
+		}
+	}
+}
